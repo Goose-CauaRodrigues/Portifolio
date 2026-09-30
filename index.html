@@ -19,14 +19,14 @@
     >
 </head>
 
-<body class="bg-light text-dark">
+<body class="bg-light text-dark pt-5" data-bs-spy="scroll" data-bs-target="#navbar-portfolio" data-bs-offset="100" data-bs-smooth-scroll="true" tabindex="0">
 
     <!-- =========================
          HEADER
     ========================== -->
 
-    <header class="border-bottom">
-        <nav class="container py-4">
+    <header class="border-bottom bg-light fixed-top">
+        <nav id="navbar-portfolio" class="container py-4">
             <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
 
                 <a
@@ -77,7 +77,7 @@
              HERO
         ========================== -->
 
-        <section id="inicio" class="container py-5">
+        <section id="inicio" class="container py-5 mt-5 min-vh-100 d-flex align-items-center">
             <div class="row align-items-center g-5 py-lg-5">
 
                 <div class="col-lg-7">
@@ -114,62 +114,82 @@
 
                 </div>
 
+<div class="col-lg-5">
 
-                <div class="col-lg-5">
-
+                    
                     <article class="border border-dark p-4 bg-white">
                         <header class="d-flex justify-content-between border-bottom pb-3 mb-4">
                             <span class="font-monospace small">
-                                profile.config
+                                profile.yml
                             </span>
 
                             <span class="font-monospace text-secondary small">
-                                01
+                                YAML
                             </span>
                         </header>
 
                         <div class="font-monospace small">
 
-                            <p>
-                                <span class="text-secondary">01</span>
-                                const developer = {
+                            <p class="mb-2">
+                                <span class="text-secondary">profile:</span>
                             </p>
 
-                            <p class="ps-4">
-                                <span class="text-secondary">02</span>
-                                name: "Cauã Rodrigues",
+                            <p class="ps-4 mb-2">
+                                name: <span class="text-dark">"Cauã Rodrigues"</span>
                             </p>
 
-                            <p class="ps-4">
-                                <span class="text-secondary">03</span>
-                                role: "Developer",
+                            <p class="ps-4 mb-2">
+                                role: <span class="text-dark">"Developer"</span>
                             </p>
 
-                            <p class="ps-4">
-                                <span class="text-secondary">04</span>
-                                focus: "Web Development",
+                            <p class="ps-4 mb-2">
+                                focus:
                             </p>
 
-                            <p class="ps-4">
-                                <span class="text-secondary">05</span>
-                                status: "Always Learning"
+                            <p class="ps-5 mb-2">
+                                - <span class="text-dark">"Web Development"</span>
                             </p>
 
-                            <p>
-                                <span class="text-secondary">06</span>
-                                };
+                            <p class="ps-5 mb-2">
+                                - <span class="text-dark">"Back-end"</span>
+                            </p>
+
+                            <p class="ps-4 mb-2">
+                                technologies:
+                            </p>
+
+                            <p class="ps-5 mb-2">
+                                - <span class="text-dark">"C# / .NET"</span>
+                            </p>
+
+                            <p class="ps-5 mb-2">
+                                - <span class="text-dark">"Java"</span>
+                            </p>
+
+                            <p class="ps-5 mb-2">
+                                - <span class="text-dark">"JavaScript"</span>
+                            </p>
+
+                            <p class="ps-5 mb-2">
+                                - <span class="text-dark">"SQL Server"</span>
+                            </p>
+
+                            <p class="ps-4 mb-0">
+                                status: <span class="text-dark">"Always Learning"</span>
                             </p>
 
                         </div>
 
                         <footer class="border-top pt-3 mt-4">
                             <span class="font-monospace text-secondary small">
-                                ~/portfolio
+                                ~/portfolio/profile.yml
                             </span>
                         </footer>
                     </article>
 
+
                 </div>
+
 
             </div>
         </section>
@@ -220,7 +240,7 @@
              ABOUT
         ========================== -->
 
-        <section id="sobre" class="container py-5">
+        <section id="sobre" class="container py-5 min-vh-100 d-flex align-items-center">
             <div class="row g-5 py-lg-5">
 
                 <div class="col-lg-4">
@@ -250,78 +270,270 @@
             </div>
         </section>
 
-
         <!-- =========================
              TECHNOLOGIES
         ========================== -->
 
-        <section id="tecnologias" class="border-top border-bottom bg-white">
-            <div class="container py-5">
+        <section id="tecnologias" class="border-top border-bottom bg-white min-vh-100 d-flex align-items-center">
+            <div class="container py-5 w-100">
 
-                <div class="d-flex flex-column flex-md-row justify-content-between gap-3 mb-4">
-                    <div>
+                <div class="row align-items-end mb-5">
+                    <div class="col-lg-8">
                         <p class="font-monospace text-secondary mb-2">
                             02 / STACK
                         </p>
 
-                        <h2 class="display-6 fw-bold mb-0">
+                        <h2 class="display-5 fw-bold mb-3">
                             Tecnologias
                         </h2>
+
+                        <p class="fs-5 text-secondary mb-0">
+                            Tecnologias que utilizo em projetos acadêmicos, sistemas web,
+                            aplicações e estudos de desenvolvimento.
+                        </p>
                     </div>
 
-                    <p class="text-secondary mb-0 align-self-md-end">
-                        Em constante evolução.
-                    </p>
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                        <span class="badge border border-dark text-dark rounded-0 px-3 py-2">
+                            Em constante evolução
+                        </span>
+                    </div>
                 </div>
 
 
-                <div class="row g-3">
+                <div class="row g-4">
 
-                    <div class="col-6 col-lg-3">
-                        <article class="border p-4 h-100">
-                            <small class="text-secondary">
-                                01
-                            </small>
+                    <!-- HTML -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card rounded-0 h-100">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="font-monospace text-secondary">
+                                        01
+                                    </span>
 
-                            <h3 class="h5 mt-4 mb-0">
-                                HTML
-                            </h3>
+                                    <span class="badge border text-dark rounded-0">
+                                        FRONT-END
+                                    </span>
+                                </div>
+
+                                <h3 class="h3 fw-bold">
+                                    HTML
+                                </h3>
+
+                                <p class="text-secondary mt-3">
+                                    Estruturação de páginas web com foco em organização,
+                                    semântica, acessibilidade e facilidade de manutenção.
+                                </p>
+
+                                <ul class="list-group list-group-flush mt-auto">
+                                    <li class="list-group-item px-0">
+                                        Estrutura semântica
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Formulários e páginas responsivas
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Integração com Bootstrap e JavaScript
+                                    </li>
+                                </ul>
+                            </div>
                         </article>
                     </div>
 
-                    <div class="col-6 col-lg-3">
-                        <article class="border p-4 h-100">
-                            <small class="text-secondary">
-                                02
-                            </small>
 
-                            <h3 class="h5 mt-4 mb-0">
-                                Bootstrap
-                            </h3>
+                    <!-- BOOTSTRAP -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card rounded-0 h-100">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="font-monospace text-secondary">
+                                        02
+                                    </span>
+
+                                    <span class="badge border text-dark rounded-0">
+                                        UI
+                                    </span>
+                                </div>
+
+                                <h3 class="h3 fw-bold">
+                                    Bootstrap
+                                </h3>
+
+                                <p class="text-secondary mt-3">
+                                    Construção de interfaces responsivas utilizando o sistema
+                                    de grid, utilitários e componentes prontos do framework.
+                                </p>
+
+                                <ul class="list-group list-group-flush mt-auto">
+                                    <li class="list-group-item px-0">
+                                        Grid responsivo
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Cards, navbar e componentes
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Layouts sem CSS personalizado
+                                    </li>
+                                </ul>
+                            </div>
                         </article>
                     </div>
 
-                    <div class="col-6 col-lg-3">
-                        <article class="border p-4 h-100">
-                            <small class="text-secondary">
-                                03
-                            </small>
 
-                            <h3 class="h5 mt-4 mb-0">
-                                C# / .NET
-                            </h3>
+                    <!-- C# / .NET -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card rounded-0 h-100">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="font-monospace text-secondary">
+                                        03
+                                    </span>
+
+                                    <span class="badge border text-dark rounded-0">
+                                        BACK-END
+                                    </span>
+                                </div>
+
+                                <h3 class="h3 fw-bold">
+                                    C# / .NET
+                                </h3>
+
+                                <p class="text-secondary mt-3">
+                                    Desenvolvimento de sistemas e aplicações web utilizando
+                                    C#, ASP.NET MVC e integração com banco de dados.
+                                </p>
+
+                                <ul class="list-group list-group-flush mt-auto">
+                                    <li class="list-group-item px-0">
+                                        ASP.NET MVC
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Controllers, Models e Views
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        ADO.NET e integração com SQL Server
+                                    </li>
+                                </ul>
+                            </div>
                         </article>
                     </div>
 
-                    <div class="col-6 col-lg-3">
-                        <article class="border p-4 h-100">
-                            <small class="text-secondary">
-                                04
-                            </small>
 
-                            <h3 class="h5 mt-4 mb-0">
-                                SQL
-                            </h3>
+                    <!-- JAVA -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card rounded-0 h-100">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="font-monospace text-secondary">
+                                        04
+                                    </span>
+
+                                    <span class="badge border text-dark rounded-0">
+                                        BACK-END
+                                    </span>
+                                </div>
+
+                                <h3 class="h3 fw-bold">
+                                    Java
+                                </h3>
+
+                                <p class="text-secondary mt-3">
+                                    Utilizo Java em estudos de lógica, orientação a objetos
+                                    e desenvolvimento de aplicações, com foco em criar uma
+                                    base sólida para projetos maiores.
+                                </p>
+
+                                <ul class="list-group list-group-flush mt-auto">
+                                    <li class="list-group-item px-0">
+                                        Programação orientada a objetos
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Estruturas de dados e lógica
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Desenvolvimento de aplicações
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- SQL -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card rounded-0 h-100">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="font-monospace text-secondary">
+                                        05
+                                    </span>
+
+                                    <span class="badge border text-dark rounded-0">
+                                        DADOS
+                                    </span>
+                                </div>
+
+                                <h3 class="h3 fw-bold">
+                                    SQL / SQL Server
+                                </h3>
+
+                                <p class="text-secondary mt-3">
+                                    Modelagem e manipulação de bancos de dados relacionais
+                                    para armazenar e consultar informações de sistemas.
+                                </p>
+
+                                <ul class="list-group list-group-flush mt-auto">
+                                    <li class="list-group-item px-0">
+                                        SELECT, INSERT, UPDATE e DELETE
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        JOINs e consultas relacionais
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Integração com aplicações C#
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- JAVASCRIPT -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card rounded-0 h-100">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="font-monospace text-secondary">
+                                        06
+                                    </span>
+
+                                    <span class="badge border text-dark rounded-0">
+                                        FRONT-END
+                                    </span>
+                                </div>
+
+                                <h3 class="h3 fw-bold">
+                                    JavaScript
+                                </h3>
+
+                                <p class="text-secondary mt-3">
+                                    Uso JavaScript para adicionar comportamento e interação
+                                    às páginas, além de estudos de lógica e manipulação de dados.
+                                </p>
+
+                                <ul class="list-group list-group-flush mt-auto">
+                                    <li class="list-group-item px-0">
+                                        Manipulação do DOM
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Eventos e interações
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Requisições e lógica no navegador
+                                    </li>
+                                </ul>
+                            </div>
                         </article>
                     </div>
 
@@ -329,108 +541,381 @@
 
             </div>
         </section>
+
+
 
 
         <!-- =========================
              PROJECTS
         ========================== -->
 
-        <section id="projetos" class="container py-5">
-            <div class="py-lg-5">
+        <section id="projetos" class="container py-5 min-vh-100 d-flex align-items-center">
+            <div class="py-lg-5 w-100">
 
-                <header class="row mb-5">
+                <div class="row align-items-end mb-5">
                     <div class="col-lg-8">
-                        <p class="font-monospace text-secondary">
+                        <p class="font-monospace text-secondary mb-2">
                             03 / PROJETOS
                         </p>
 
-                        <h2 class="display-5 fw-bold">
-                            Coisas que estou construindo.
+                        <h2 class="display-5 fw-bold mb-3">
+                            Projetos.
                         </h2>
-                    </div>
-                </header>
 
+                        <p class="fs-5 text-secondary mb-0">
+                            Alguns dos projetos que desenvolvi e mantenho no GitHub.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                        <a
+                            href="https://github.com/Goose-CauaRodrigues"
+                            class="btn btn-outline-dark rounded-0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ver GitHub completo
+                        </a>
+                    </div>
+                </div>
 
                 <div class="row g-4">
 
-                    <div class="col-lg-7">
-                        <article class="border border-dark p-4 p-lg-5 h-100">
+                    <!-- NEMONIC RP -->
+                    <div class="col-12">
+                        <div class="card border-dark rounded-0 h-100">
+                            <div class="card-body p-4 p-lg-5">
+                                <div class="row align-items-end g-4">
 
-                            <div class="d-flex justify-content-between mb-5">
-                                <small class="text-secondary">
-                                    PROJECT_01
-                                </small>
+                                    <div class="col-lg-8">
+                                        <div class="d-flex justify-content-between gap-3 mb-5">
+                                            <small class="font-monospace text-secondary">
+                                                PROJECT_01
+                                            </small>
 
-                                <small class="text-secondary">
-                                    EM DESENVOLVIMENTO
-                                </small>
+                                            <span class="badge text-bg-dark rounded-0">
+                                                DESTAQUE
+                                            </span>
+                                        </div>
+
+                                        <h3 class="display-5 fw-bold">
+                                            nemonicRP
+                                        </h3>
+
+                                        <p class="fs-5 text-secondary mt-3 mb-4">
+                                            Projeto voltado ao desenvolvimento e personalização
+                                            do servidor NemonicRP, com sistemas, mecânicas e
+                                            recursos próprios para Minecraft.
+                                        </p>
+
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge border border-dark text-dark rounded-0">
+                                                Minecraft
+                                            </span>
+
+                                            <span class="badge border border-dark text-dark rounded-0">
+                                                Paper
+                                            </span>
+
+                                            <span class="badge border border-dark text-dark rounded-0">
+                                                Skript
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 text-lg-end">
+                                        <a
+                                            href="https://github.com/Goose-CauaRodrigues/nemonicRP"
+                                            class="btn btn-dark rounded-0 px-4 py-3"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Ver projeto
+                                        </a>
+                                    </div>
+
+                                </div>
                             </div>
-
-                            <h3 class="display-6 fw-bold">
-                                Meu espaço digital
-                            </h3>
-
-                            <p class="text-secondary mt-3 mb-5">
-                                O próprio portfólio como um projeto contínuo,
-                                preparado para receber novas páginas,
-                                funcionalidades e experimentos.
-                            </p>
-
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge border text-dark rounded-0">
-                                    HTML
-                                </span>
-
-                                <span class="badge border text-dark rounded-0">
-                                    Bootstrap
-                                </span>
-
-                                <span class="badge border text-dark rounded-0">
-                                    Web
-                                </span>
-                            </div>
-
-                        </article>
+                        </div>
                     </div>
 
+                    <!-- GRMP2 -->
+                    <div class="col-md-6">
+                        <div class="card rounded-0 h-100">
+                            <div class="card-body p-4 p-lg-5 d-flex flex-column">
+                                <div class="d-flex justify-content-between gap-3 mb-4">
+                                    <small class="font-monospace text-secondary">
+                                        PROJECT_02
+                                    </small>
 
-                    <div class="col-lg-5">
-                        <article class="border p-4 p-lg-5 h-100">
+                                    <span class="badge border text-dark rounded-0">
+                                        WEB
+                                    </span>
+                                </div>
 
-                            <div class="d-flex justify-content-between mb-5">
-                                <small class="text-secondary">
-                                    PROJECT_02
-                                </small>
+                                <h3 class="h2 fw-bold">
+                                    GRMP2
+                                </h3>
 
-                                <small class="text-secondary">
-                                    SOON
-                                </small>
+                                <p class="text-secondary mt-3 flex-grow-1">
+                                    Sistema web para gerenciamento de ordens de serviço,
+                                    usuários, locais e informações de atendimento.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2 my-4">
+                                    <span class="badge border text-dark rounded-0">C#</span>
+                                    <span class="badge border text-dark rounded-0">ASP.NET MVC</span>
+                                    <span class="badge border text-dark rounded-0">SQL Server</span>
+                                </div>
+
+                                <div>
+                                    <a
+                                        href="https://github.com/Goose-CauaRodrigues/GRMP2"
+                                        class="btn btn-outline-dark rounded-0"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ver projeto
+                                    </a>
+                                </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <h3 class="h2 fw-bold">
-                                Próximo projeto_
-                            </h3>
+                    <!-- ANIMATRIX V2 -->
+                    <div class="col-md-6">
+                        <div class="card rounded-0 h-100">
+                            <div class="card-body p-4 p-lg-5 d-flex flex-column">
+                                <div class="d-flex justify-content-between gap-3 mb-4">
+                                    <small class="font-monospace text-secondary">
+                                        PROJECT_03
+                                    </small>
 
-                            <p class="text-secondary mt-3">
-                                Espaço reservado para futuros projetos,
-                                aplicações e experimentos.
-                            </p>
+                                    <span class="badge border text-dark rounded-0">
+                                        PROJETO
+                                    </span>
+                                </div>
 
-                        </article>
+                                <h3 class="h2 fw-bold">
+                                    Animatrix-v2
+                                </h3>
+
+                                <p class="text-secondary mt-3 flex-grow-1">
+                                    Segunda versão do projeto Animatrix, disponível
+                                    publicamente no meu GitHub.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2 my-4">
+                                    <span class="badge border text-dark rounded-0">
+                                        GitHub
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <a
+                                        href="https://github.com/Goose-CauaRodrigues/Animatrix-v2"
+                                        class="btn btn-outline-dark rounded-0"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ver projeto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ALBUM DA COPA -->
+                    <div class="col-md-6">
+                        <div class="card rounded-0 h-100">
+                            <div class="card-body p-4 p-lg-5 d-flex flex-column">
+                                <div class="d-flex justify-content-between gap-3 mb-4">
+                                    <small class="font-monospace text-secondary">
+                                        PROJECT_04
+                                    </small>
+
+                                    <span class="badge border text-dark rounded-0">
+                                        APLICAÇÃO
+                                    </span>
+                                </div>
+
+                                <h3 class="h2 fw-bold">
+                                    Albun-da-copa
+                                </h3>
+
+                                <p class="text-secondary mt-3 flex-grow-1">
+                                    Projeto de álbum da Copa desenvolvido como aplicação
+                                    e publicado no GitHub.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2 my-4">
+                                    <span class="badge border text-dark rounded-0">
+                                        GitHub
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <a
+                                        href="https://github.com/Goose-CauaRodrigues/Albun-da-copa"
+                                        class="btn btn-outline-dark rounded-0"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ver projeto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SISTEMA TELEMETRIA IOT -->
+                    <div class="col-md-6">
+                        <div class="card rounded-0 h-100">
+                            <div class="card-body p-4 p-lg-5 d-flex flex-column">
+                                <div class="d-flex justify-content-between gap-3 mb-4">
+                                    <small class="font-monospace text-secondary">
+                                        PROJECT_05
+                                    </small>
+
+                                    <span class="badge border text-dark rounded-0">
+                                        IOT
+                                    </span>
+                                </div>
+
+                                <h3 class="h2 fw-bold">
+                                    Sistema-telemetria-iot
+                                </h3>
+
+                                <p class="text-secondary mt-3 flex-grow-1">
+                                    Projeto de telemetria voltado à coleta e ao
+                                    acompanhamento de informações utilizando IoT.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2 my-4">
+                                    <span class="badge border text-dark rounded-0">IoT</span>
+                                    <span class="badge border text-dark rounded-0">Telemetria</span>
+                                </div>
+
+                                <div>
+                                    <a
+                                        href="https://github.com/Goose-CauaRodrigues/Sistema-telemetria-iot"
+                                        class="btn btn-outline-dark rounded-0"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ver projeto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MOCHILA DE JAVASCRIPT -->
+                    <div class="col-md-6">
+                        <div class="card rounded-0 h-100">
+                            <div class="card-body p-4 p-lg-5 d-flex flex-column">
+                                <div class="d-flex justify-content-between gap-3 mb-4">
+                                    <small class="font-monospace text-secondary">
+                                        PROJECT_06
+                                    </small>
+
+                                    <span class="badge border text-dark rounded-0">
+                                        JAVASCRIPT
+                                    </span>
+                                </div>
+
+                                <h3 class="h2 fw-bold">
+                                    Mochila-de-JavaScript
+                                </h3>
+
+                                <p class="text-secondary mt-3 flex-grow-1">
+                                    Repositório dedicado a estudos, exercícios e
+                                    experimentos desenvolvidos com JavaScript.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2 my-4">
+                                    <span class="badge border text-dark rounded-0">
+                                        JavaScript
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <a
+                                        href="https://github.com/Goose-CauaRodrigues/Mochila-de-JavaScript"
+                                        class="btn btn-outline-dark rounded-0"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ver projeto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CENTRAL DE MONITORAMENTO -->
+                    <div class="col-md-6">
+                        <div class="card rounded-0 h-100">
+                            <div class="card-body p-4 p-lg-5 d-flex flex-column">
+                                <div class="d-flex justify-content-between gap-3 mb-4">
+                                    <small class="font-monospace text-secondary">
+                                        PROJECT_07
+                                    </small>
+
+                                    <span class="badge border text-dark rounded-0">
+                                        SISTEMA
+                                    </span>
+                                </div>
+
+                                <h3 class="h2 fw-bold">
+                                    central-monitoramento
+                                </h3>
+
+                                <p class="text-secondary mt-3 flex-grow-1">
+                                    Projeto de central de monitoramento para organizar
+                                    e visualizar informações em uma única interface.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2 my-4">
+                                    <span class="badge border text-dark rounded-0">
+                                        Monitoramento
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <a
+                                        href="https://github.com/Goose-CauaRodrigues/central-monitoramento"
+                                        class="btn btn-outline-dark rounded-0"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ver projeto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-
             </div>
         </section>
+
+
+
+
+
+
+
+
+
 
 
         <!-- =========================
              CONTACT
         ========================== -->
 
-        <section id="contato" class="bg-dark text-light">
-            <div class="container py-5">
+        <section id="contato" class="bg-dark text-light min-vh-100 d-flex align-items-center">
+            <div class="container py-5 w-100">
                 <div class="row py-lg-5">
 
                     <div class="col-lg-8">
@@ -478,8 +963,10 @@
                                 E-mail
                             </a>
 
-                        </div>
 
+                        </div>
+                         <br><br>
+                        <p class="font-monospace text-secondary">© 2026 Cauã Rodrigues</p>
                     </div>
 
                 </div>
@@ -489,25 +976,11 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="border-top">
-        <div class="container py-4">
-            <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
-
-                <small class="text-secondary">
-                    © 2026 Cauã Rodrigues
-                </small>
-
-                <small class="font-monospace text-secondary">
-                    dev@portfolio:~$
-                </small>
-
-            </div>
-        </div>
-    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+    ></script>
 
 </body>
 </html>
